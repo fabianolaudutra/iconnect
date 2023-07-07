@@ -1,0 +1,12 @@
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/bin/Debug/net6.0/Iconnect.ViaCEP.deps.json
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/bin/Debug/net6.0/Iconnect.ViaCEP.dll
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/bin/Debug/net6.0/ref/Iconnect.ViaCEP.dll
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/bin/Debug/net6.0/Iconnect.ViaCEP.pdb
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/Iconnect.ViaCEP.csproj.AssemblyReference.cache
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/Iconnect.ViaCEP.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/Iconnect.ViaCEP.AssemblyInfoInputs.cache
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/Iconnect.ViaCEP.AssemblyInfo.cs
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/Iconnect.ViaCEP.csproj.CoreCompileInputs.cache
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/Iconnect.ViaCEP.dll
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/ref/Iconnect.ViaCEP.dll
+/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/Debug/net6.0/Iconnect.ViaCEP.pdb

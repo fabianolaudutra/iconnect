@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Connected Services\br.com.portaliconnect.buscacep\**" />
+    <Compile Remove="Connected Services\ConsultaCEP\**" />
+    <Compile Remove="Connected Services\WebReferences\**" />
+    <EmbeddedResource Remove="Connected Services\br.com.portaliconnect.buscacep\**" />
+    <EmbeddedResource Remove="Connected Services\ConsultaCEP\**" />
+    <EmbeddedResource Remove="Connected Services\WebReferences\**" />
+    <None Remove="Connected Services\br.com.portaliconnect.buscacep\**" />
+    <None Remove="Connected Services\ConsultaCEP\**" />
+    <None Remove="Connected Services\WebReferences\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\LimpezaClienteService.cs~RF3eb9b919.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\Queries\" />
+    <Folder Include="Models\" />
+    <Folder Include="CitroxDecompiled\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Queries\" />
+    <Folder Include="Template\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    
+    <PackageReference Include="dapper" Version="2.0.123" />
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.32" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+     <PackageReference Include="PagedList" Version="1.17.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+    <PackageReference Include="Nancy.Authentication.Forms" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SocketIOClient" Version="3.0.8" />
+    <PackageReference Include="SocketIOClient.Newtonsoft.Json" Version="3.0.7" />
+   
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>    
+   <ProjectReference Include="..\Iconnect.Bucket\Iconnect.Bucket.csproj" />
+    <ProjectReference Include="..\Iconnect.Infraestrutura\Iconnect.Infraestrutura.csproj" />
+    <ProjectReference Include="..\Iconnect.ViaCEP\Iconnect.ViaCEP.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Citrox.Access.Sdk">
+      <HintPath>..\Iconnect.Portal\DllsTerceiros\Citrox.Access.Sdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Template\EmailClienteReserva.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

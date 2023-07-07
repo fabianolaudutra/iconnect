@@ -1,0 +1,21 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.31022.994",
+  "ExtendedData": {
+    "inputs": [
+      "http://buscacep.portaliconnect.com.br/Consulta.asmx"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, ConsultaCEP"
+    ],
+    "references": [
+      "D:\\Iconnect\\portal-iconnect-v2\\Iconnect.Portal\\bin\\Debug\\net6.0\\Iconnect.Aplicacao.dll"
+    ],
+    "targetFramework": "net6.0",
+    "typeReuseMode": "Specified"
+  }
+}

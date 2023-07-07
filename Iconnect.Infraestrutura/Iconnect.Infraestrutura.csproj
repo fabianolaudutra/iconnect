@@ -1,0 +1,106 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200107002946_initial.cs" />
+    <Compile Remove="Migrations\20200107002946_initial.Designer.cs" />
+    <Compile Remove="Migrations\20200107004515_initial_%40.cs" />
+    <Compile Remove="Migrations\20200107004515_initial_%40.Designer.cs" />
+    <Compile Remove="Migrations\20200107005105_t.cs" />
+    <Compile Remove="Migrations\20200107005105_t.Designer.cs" />
+    <Compile Remove="Migrations\20200107010638_t2.cs" />
+    <Compile Remove="Migrations\20200107010638_t2.Designer.cs" />
+    <Compile Remove="Migrations\20200107010734_t2.cs" />
+    <Compile Remove="Migrations\20200107010734_t2.Designer.cs" />
+    <Compile Remove="Migrations\20200107011447_t3.cs" />
+    <Compile Remove="Migrations\20200107011447_t3.Designer.cs" />
+    <Compile Remove="Migrations\20200108214529_m2.cs" />
+    <Compile Remove="Migrations\20200108214529_m2.Designer.cs" />
+    <Compile Remove="Migrations\20200108215319_test.cs" />
+    <Compile Remove="Migrations\20200108215319_test.Designer.cs" />
+    <Compile Remove="Migrations\20200108220207_test.cs" />
+    <Compile Remove="Migrations\20200108220207_test.Designer.cs" />
+    <Compile Remove="Migrations\20200108220842_test.cs" />
+    <Compile Remove="Migrations\20200108220842_test.Designer.cs" />
+    <Compile Remove="Migrations\20200109224530_initial_2.cs" />
+    <Compile Remove="Migrations\20200109224530_initial_2.Designer.cs" />
+    <Compile Remove="Migrations\20200322033618_t.cs" />
+    <Compile Remove="Migrations\20200322033618_t.Designer.cs" />
+    <Compile Remove="Migrations\20200322034355_t.cs" />
+    <Compile Remove="Migrations\20200322034355_t.Designer.cs" />
+    <Compile Remove="Migrations\20200322035102_t.cs" />
+    <Compile Remove="Migrations\20200322035102_t.Designer.cs" />
+    <Compile Remove="Migrations\20201116171353_relacionamentoEmpresaXAcesso.cs" />
+    <Compile Remove="Migrations\20201116171353_relacionamentoEmpresaXAcesso.Designer.cs" />
+    <Compile Remove="Migrations\20201124145741_moradorOnDeleteFoto.cs" />
+    <Compile Remove="Migrations\20201124145741_moradorOnDeleteFoto.Designer.cs" />
+    <Compile Remove="Migrations\20210208134222_atualizacaoDbGeral.cs" />
+    <Compile Remove="Migrations\20210208134222_atualizacaoDbGeral.Designer.cs" />
+    <Compile Remove="Migrations\20210219190411_add_column_cli_b_free.cs" />
+    <Compile Remove="Migrations\20210219190411_add_column_cli_b_free.Designer.cs" />
+    <Compile Remove="Migrations\20210219203932_add_cli_b_free.cs" />
+    <Compile Remove="Migrations\20210219203932_add_cli_b_free.Designer.cs" />
+    <Compile Remove="Migrations\20210311184550_campos_connectionSignalR.cs" />
+    <Compile Remove="Migrations\20210311184550_campos_connectionSignalR.Designer.cs" />
+    <Compile Remove="Migrations\20210309170904_Altera_propriedade_cal_scc_n_codigo.cs" />
+    <Compile Remove="Migrations\20210309170904_Altera_propriedade_cal_scc_n_codigo.Designer.cs" />
+    <Compile Remove="Migrations\20210407140645_visitanteAPP.cs" />
+    <Compile Remove="Migrations\20210407140645_visitanteAPP.Designer.cs" />
+    <Compile Remove="Migrations\20210407141335_visitanteAPP.cs" />
+    <Compile Remove="Migrations\20210407141335_visitanteAPP.Designer.cs" />
+    <Compile Remove="Migrations\20210407141811_visitante_app.cs" />
+    <Compile Remove="Migrations\20210407141811_visitante_app.Designer.cs" />
+    <Compile Remove="Migrations\20210407141936_visitante_app.cs" />
+    <Compile Remove="Migrations\20210407141936_visitante_app.Designer.cs" />
+    <Compile Remove="Migrations\20210407142416_visitante_app.cs" />
+    <Compile Remove="Migrations\20210407142416_visitante_app.Designer.cs" />
+    <Compile Remove="Migrations\20210407143812_visitante_app.cs" />
+    <Compile Remove="Migrations\20210407143812_visitante_app.Designer.cs" />
+    <Compile Remove="Migrations\20210407181417_guid_visitante_app.cs" />
+    <Compile Remove="Migrations\20210407181417_guid_visitante_app.Designer.cs" />
+    <Compile Remove="Migrations\20210407181651_guid_visitante_app.cs" />
+    <Compile Remove="Migrations\20210407181651_guid_visitante_app.Designer.cs" />
+    <Compile Remove="Migrations\20210908194714_campo_horario_foto.cs" />
+    <Compile Remove="Migrations\20210908194714_campo_horario_foto.Designer.cs" />
+    <Compile Remove="Migrations\20210909141225_campo_foto_catalogo.cs" />
+    <Compile Remove="Migrations\20210909141225_campo_foto_catalogo.Designer.cs" />
+    <Compile Remove="Migrations\20210909141712_campo_foto_catalogo.cs" />
+    <Compile Remove="Migrations\20210909141712_campo_foto_catalogo.Designer.cs" />
+    <Compile Remove="Migrations\20210920203330_add_campo_especialista_catalogo.cs" />
+    <Compile Remove="Migrations\20210920203330_add_campo_especialista_catalogo.Designer.cs" />
+    <Compile Remove="Migrations\20220110183910_add_tb_ocp_ocorrenciasOperador.cs" />
+    <Compile Remove="Migrations\20220110183910_add_tb_ocp_ocorrenciasOperador.Designer.cs" />
+    <Compile Remove="Migrations\20220110193552_add_tb_ocp_ocorrenciasOperador.cs" />
+    <Compile Remove="Migrations\20220110193552_add_tb_ocp_ocorrenciasOperador.Designer.cs" />
+    <Compile Remove="Migrations\20220110194557_add_tb_ocp_ocorrenciasOperador.cs" />
+    <Compile Remove="Migrations\20220110194557_add_tb_ocp_ocorrenciasOperador.Designer.cs" />
+    <Compile Remove="Migrations\20220110194905_add_tb_ocp_ocorrenciasOperador.cs" />
+    <Compile Remove="Migrations\20220110194905_add_tb_ocp_ocorrenciasOperador.Designer.cs" />
+    <Compile Remove="Migrations\20220110195243_add_tb_ocp_ocorrenciasOperador.cs" />
+    <Compile Remove="Migrations\20220110195243_add_tb_ocp_ocorrenciasOperador.Designer.cs" />
+    <Compile Remove="Migrations\20220217164437_add_vinculo_morador_veiculo.cs" />
+    <Compile Remove="Migrations\20220217164437_add_vinculo_morador_veiculo.Designer.cs" />
+    <Compile Remove="Models\tb_precos.cs" />
+    <Compile Remove="Migrations\20210428123427_tabela_device.cs" />
+    <Compile Remove="Migrations\20210428123427_tabela_device.Designer.cs" />
+    <Compile Remove="Models\tb_tpc_topicoaAjuda.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+   <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+   <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+     <PrivateAssets>all</PrivateAssets>
+     <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+   <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

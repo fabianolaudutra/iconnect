@@ -1,0 +1,468 @@
+// TABS
+// -----------------------------
+.nav.nav-tabs .active a {
+  background-color: #fafafa;
+  border-color: rgba(0, 82, 125, 0.5);
+  border-bottom-color: #fafafa !important;
+  border-bottom: none;
+  font-weight: 600;
+  padding: 8px 10px 12px;
+  color: #00527d !important;
+
+}
+
+
+.nav.nav-tabs .active a {
+  background-color: #fafafa;
+  border-color: rgba(0, 82, 125, 0.5);
+  border-bottom-color: #fafafa !important;
+  border-bottom: none;
+  font-weight: 600;
+  padding: 8px 10px 12px;
+  color: #00527d;
+  text-transform: uppercase;
+
+
+}
+
+.nav.nav-tabs .dropdown-menu a {
+  background-color: #fff
+}
+
+.nav.nav-tabs li:not(.active) a {
+  padding: 3px 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 82, 125, 0.15);
+  margin-right: 5px;
+  margin-left: 5px;
+  text-transform: uppercase;
+
+}
+
+.nav.nav-tabs li>a {
+  border: none;
+  background-color: rgba(0, 82, 125, 0.17);
+  text-decoration: none;
+  color: #00527d;
+  border-color: rgba(0, 82, 125, 0.15);
+  margin-right: 5px;
+  border-bottom-color: transparent;
+
+}
+
+.nav.nav-tabs li:not(.active) a {
+  border-color: #869a12;
+  background-color: rgba(134, 154, 18, .15);
+  transition: all ease-in-out .15s;
+  color: #202600
+}
+
+.nav.nav-tabs li:not(.active) a:hover {
+  background-color: #4c5803;
+  color: #fff
+}
+
+.tab-content {
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 82, 125, 0.5);
+  margin-top: -2px;
+}
+
+.ngx-datatable {
+  text-transform: uppercase;
+
+}
+
+select {
+  text-transform: uppercase;
+
+}
+
+//Page title
+.page-title {
+  margin: 0;
+  padding: 0 0 5px 0;
+  color: #003C64;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+
+//Botões Dinamicos
+// -----------------------------
+.btn-adicionar {
+  float: right;
+  margin-left: 5px;
+}
+
+.btn.dynamic {
+  margin-bottom: 3px;
+  width: auto;
+  position: relative;
+  background-color: #00527D;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: none;
+  padding-right: 50px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: none;
+  margin-right: 3px;
+}
+
+.btn.dynamic i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.btn.dynamic:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 38px;
+  right: -1px;
+  top: -1px;
+  border-bottom: 34px solid #0073b0;
+  border-left: 10px solid transparent;
+  transition: all ease-in-out 0.25s;
+  opacity: 1;
+}
+
+.btn.dynamic.success:before {
+  border-bottom-color: #9cb127;
+}
+
+.btn.dynamic.serial:before {
+  border-bottom-color: #82589F;
+}
+
+.btn.dynamic.danger:before {
+  border-bottom-color: #B0413E;
+}
+
+.btn.dynamic.warning:before {
+  border-bottom-color: #EDAE49;
+}
+
+.btn.dynamic.block {
+  width: 100%;
+}
+
+.btn.dynamic:hover:before {
+  width: 42px;
+}
+
+.btn-controls {
+  text-align: right;
+  padding-top: 7px;
+}
+
+.nav-tabs>.nav-item>.nav-link.active,
+.nav-tabs>.nav-item>.nav-link.active:hover,
+.nav-tabs>.nav-item>.nav-link.active:focus {
+  background-color: #fafafa;
+}
+
+.fieldset-md {
+  margin-bottom: none !important;
+  padding: none !important;
+
+}
+
+.error {
+  color: #f05050;
+}
+
+//Forms Dinamicos
+// -----------------------------
+.form-control {
+  // box-shadow: 0 0 0 #000 !important;
+  font-size: 0.875rem;
+  // border-bottom-color: #869a12;
+  // background-color: transparent;
+  // border-radius: 0;
+  // border: none;
+  // border-bottom: 0.5px solid #00527d;
+  box-shadow: none;
+  border-color: #cccccc;
+}
+
+.form-control {
+  // background-color: transparent;
+  // border-radius: 0;
+  // border: none;
+  // border-bottom: 1px solid #00527d;
+  // box-shadow: none;
+
+  &:focus {
+    /*border: 1px solid #00527d !important;*/
+    border: 1px solid #bed630 !important;
+    /*border-bottom-width: 2px !important;*/
+    border-radius: 4px;
+    outline: none !important;
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);*/
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) !important;
+    /*background-color: rgba(190, 214, 48,0.5);*/
+    background-color: #f9ffd7;
+  }
+}
+
+.control-label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 1rem;
+
+}
+
+.tab-pane {
+  margin-top: 5px;
+}
+
+//Botões tipo mobile
+@media screen and (min-width: 1080px) {
+  .btn-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .btn-medium {
+    display: none;
+  }
+
+  .btn-small {
+    color: #fff;
+    height: 30px;
+    margin-bottom: 5px;
+    width: 45px;
+  }
+
+  .success {
+    background-color: #9cb127;
+  }
+
+  .danger {
+    background-color: #B0413E;
+  }
+
+  .warning {
+    background-color: #EDAE49;
+  }
+
+  .excel {
+    background-color: #00527D;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .btn-small {
+    display: none;
+  }
+}
+
+.form-select {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-height: 36px;
+  align-items: center;
+}
+
+
+.modal-header {
+  background-color: #00689f;
+  color: white;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.close {
+  color: white;
+  opacity: 0.85;
+}
+
+.modalClass .modal-dialog {
+  max-width: 1000px;
+}
+
+.modal-title {
+  text-transform: uppercase;
+}
+
+
+//Menu sidebar
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border: solid 1px;
+  top: 67px;
+  overflow: scroll;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .bodyNav {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.btn-filter {
+  background-color: #00527D;
+  color: #FFF;
+  border-radius: 4px;
+  height: 2.1875rem;
+  margin-left: 0px;
+}
+
+.btn-filtrar {
+  background-color: #00527D;
+  color: #FFF;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+
+.input-filter {
+  border: 1px solid #c6c9ca;
+  border-radius: .25rem;
+  background-color: #fff;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+.searchBasico {
+  min-width: 270px;
+}
+
+.input-icon {
+  //position: relative;
+  font-size: 15px;
+  margin-right: 12px;
+  margin-top: -24px;
+  z-index: 2;
+  float: right;
+  cursor: pointer;
+}
+
+.div-filter {
+  padding: 0;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.hrCadBasico {
+  margin-top: initial;
+}
+
+.espacamentoTexto {
+  margin-left: 5px;
+}
+
+.tamSpan {
+  font-size: 25px;
+}
+
+.btnAdd {
+  margin-right: 0 !important;
+  margin-top: 2%;
+  margin-bottom: 1rem !important;
+  float: right;
+}
+
+.btnGerar {
+  margin-top: 43px !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+}
+
+.posicaoSpan {
+  margin-right: 8px !important;
+  margin-top: 13px;
+}
+
+.espacamentoModulos {
+  margin-bottom: 20px !important;
+}
+
+.posiCheck {
+  margin-top: 3px;
+}
+
+.btnBuscar {
+  margin-top: 30px !important;
+  width: 100% !important;
+  margin-right: 30px;
+
+}
+
+.titulo {
+  font-size: 17px;
+}
+
+.bordaRel{
+  border-top: solid 1px #7DA6BC;
+  border-bottom: solid 1px #7DA6BC;
+  border-left: solid 1px #7DA6BC;
+  border-right: solid 1px #7DA6BC;
+  background: #fbfbfb;
+  margin: -2px;
+  padding: 10px;
+}
+
+.btnAberturaRemota {
+  color: #fff !important;
+  background-color:#27c24c !important;
+  margin-top: 10px !important;
+  border: none;
+}

@@ -1,0 +1,56 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:61567/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "Electron.NET Run": {
+      "commandName": "Executable",
+      "executablePath": "electronize",
+      "commandLineArgs": "start",
+      "workingDirectory": ".",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Electron"
+      }
+    },
+    "Electron.NET Build Windows": {
+      "commandName": "Executable",
+      "executablePath": "electronize",
+      "commandLineArgs": "build /target win",
+      "workingDirectory": ".",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Electron"
+      },
+      "applicationUrl": "http://localhost:61567/"
+    },
+    "Electron.NET Build Linux": {
+      "commandName": "Executable",
+      "executablePath": "electronize",
+      "commandLineArgs": "build /target linux",
+      "workingDirectory": ".",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Electron"
+      },
+      "applicationUrl": "http://localhost:61567/"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Iconnect.Portal": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:61567/"
+    }
+  }
+}

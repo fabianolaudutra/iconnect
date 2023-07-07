@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "local": "Condominio",
+    "pessoa_principal": "Morador",
+    "pessoa_secundaria": "Visitante",
+    "pessoa_terciaria": "Prestador de Serviços",
+    "grupo": "Grupo Familiar",
+    "pessoa_terc_abrev": "Prest Serv.",
+    "grupo_abrev": "Grupo Fam.",
+    "localizacao": "Localização"
+    },
+  {
+    "id": 2,
+    "local": "Condominio",
+    "pessoa_principal": "Funcionário",
+    "pessoa_secundaria": "Visitante",
+    "pessoa_terciaria": "Prestador de Serviços",
+    "grupo": "Departamento",
+    "pessoa_terc_abrev": "Prest Serv.",
+    "grupo_abrev": "Departamento",
+    "localizacao": "Localização"
+  },
+  {
+    "id": 3,
+    "local": "Condominio",
+    "pessoa_principal": "Morador",
+    "pessoa_secundaria": "Visitante",
+    "pessoa_terciaria": "Prestador de Serviços",
+    "grupo": "Grupo Familiar",
+    "pessoa_terc_abrev": "Prest Serv.",
+    "grupo_abrev": "Grupo Fam.",
+    "localizacao": "Localização"
+  }
+]

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+    <!-- <SpaProxyServerUrl>https://localhost:44414</SpaProxyServerUrl> -->
+    <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <RootNamespace>Iconnect.Portal</RootNamespace>
+    <UserSecretsId>df76158e-fabe-4cfa-92cb-f920b3c92b92</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    
+    <PackageReference Include="ElectronNET.API" Version="23.6.1" />
+    <PackageReference Include="IdentityServer4" Version="3.1.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core.fr" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.32" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.6.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Web.Infrastructure" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Numind.AspNetCore.SpaServices.Extensions" Version="1.0.1" />
+    <PackageReference Include="SocketIOClient.Newtonsoft.Json" Version="3.0.7" />
+    <PackageReference Include="PagedList" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle" Version="5.6.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.7.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.7.0" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.7.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <!-- <Compile Remove="ClientApp\src\app\pages\mural\operador\formulario\**" /> -->
+    <Compile Remove="Connected Services\ConsultaCEP\**" />
+    <Compile Remove="Connected Services\ServiceReference1\**" />
+    <Content Remove="$(SpaRoot)**" />
+    <!-- <Content Remove="ClientApp\src\app\pages\mural\operador\formulario\**" /> -->
+    <Content Remove="Connected Services\ConsultaCEP\**" />
+    <Content Remove="Connected Services\ServiceReference1\**" />
+    <!-- <EmbeddedResource Remove="ClientApp\src\app\pages\mural\operador\formulario\**" /> -->
+    <EmbeddedResource Remove="Connected Services\ConsultaCEP\**" />
+    <EmbeddedResource Remove="Connected Services\ServiceReference1\**" />
+    <None Remove="$(SpaRoot)**" />
+    <!-- <None Remove="ClientApp\src\app\pages\mural\operador\formulario\**" /> -->
+    <None Remove="Connected Services\ConsultaCEP\**" />
+    <None Remove="Connected Services\ServiceReference1\**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install " />
+  </Target>
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install " />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+   
+    <!-- Include the newly-built files in the publish output  **WorkingDirectory="$(SpaRoot)"** -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+  <ItemGroup>
+    <Compile Remove="Controllers\RefeitorioController.cs" />
+    <Compile Remove="Controllers\RefeitorioViewModel.cs" />
+    <Compile Remove="HubConfigs\ControleDeOcorrenciaHub.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ClientApp\src\app\models\aviso.models.ts" />
+    <None Remove="ClientApp\src\app\models\avisoEmpresa.models.ts" />
+    <None Remove="ClientApp\src\app\models\categorizacaoAviso.models.ts" />
+    <None Remove="ClientApp\src\app\models\categorizacaoEvento.models.ts" />
+    <None Remove="ClientApp\src\app\models\envioNotificacao.models.ts" />
+    <None Remove="ClientApp\src\app\models\filter\marcaVeiculo-filter.models.js" />
+    <None Remove="ClientApp\src\app\models\filter\marcaVeiculo-filter.models.js.map" />
+    <None Remove="ClientApp\src\app\models\filter\marcaVeiculo-filter.models.ts" />
+    <None Remove="ClientApp\src\app\models\limpezCliente.models.ts" />
+    <None Remove="ClientApp\src\app\models\marcaVeiculo.models.ts" />
+    <None Remove="ClientApp\src\app\models\operadorLocal.models.ts" />
+    <None Remove="ClientApp\src\app\pages\configuracoes\raca\config-table\raca-table.service.ts" />
+    <None Remove="ClientApp\src\app\services\AvisoEmpresa\avisoEmpresa.service.spec.ts" />
+    <None Remove="ClientApp\src\app\services\AvisoEmpresa\AvisoEmpresa.service.ts" />
+    <None Remove="ClientApp\src\app\services\cliente\cliente.service.spec.ts" />
+    <None Remove="ClientApp\src\app\services\cliente\cliente.service.ts" />
+    <None Remove="ClientApp\src\app\services\grupoPermissaoOperador\grupoPermissaoOperador.service.spec.ts" />
+    <None Remove="ClientApp\src\app\services\grupoPermissaoOperador\grupoPermissaoOperador.service.ts" />
+    <None Remove="ClientApp\src\app\services\raca\raca.service.spec.ts" />
+    <None Remove="ClientApp\src\app\services\raca\raca.service.ts" />
+    <None Remove="Resources\Images\app-universal-release.apk" /> 
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Iconnect.Dominio\Iconnect.Dominio.csproj" />
+    <ProjectReference Include="..\Iconnect.Infraestrutura.Crosscutting\Iconnect.Infraestrutura.Crosscutting.csproj" />
+    <ProjectReference Include="..\Iconnect.Infraestrutura\Iconnect.Infraestrutura.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\models\avisoEmpresa.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\envioNotificacao.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\categorizacaoAviso.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\aviso.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\categorizacaoEvento.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\filter\marcaVeiculo-filter.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\limpezCliente.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\marcaVeiculo.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\operadorLocal.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\raca.models.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\pages\configuracoes\raca\config-table\raca-table.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\cliente\cliente.service.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\cliente\cliente.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\grupoPermissaoOperador\grupoPermissaoOperador.service.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\grupoPermissaoOperador\grupoPermissaoOperador.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\AvisoEmpresa\avisoEmpresa.service.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\AvisoEmpresa\avisoEmpresa.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\raca\raca.service.spec.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\raca\raca.service.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.Electron.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="electron.manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\pages\cadastro\operadorLocal\formulario\" />
+    <Folder Include="ClientApp\src\app\pages\comercial\salaComercial\Formulario\" />
+    <Folder Include="ClientApp\src\app\pages\configuracoes\categorizacaoAviso\config-table\" />
+    <Folder Include="ClientApp\src\app\pages\configuracoes\categorizacaoAviso\formulario\" />
+    <Folder Include="ClientApp\src\app\pages\configuracoes\categorizacaoEvento\formulario\" />
+    <Folder Include="ClientApp\src\app\pages\configuracoes\categorizacaoEvento\config-table\" />
+    <Folder Include="ClientApp\src\app\pages\configuracoes\marcaVeiculo\formulario\" />
+    <Folder Include="ClientApp\src\app\pages\configuracoes\grupoPermissaoOperador\" />
+    <Folder Include="ClientApp\src\app\pages\configuracoes\raca\formulario\" />
+    <Folder Include="ClientApp\src\app\pages\access\" />
+    <Folder Include="ClientApp\src\app\services\categorizacaoAviso\" />
+    <Folder Include="ClientApp\src\app\services\limpezaCliente\" />
+    <Folder Include="ClientApp\src\assets\img\icons\" />
+    <Folder Include="Connected Services\" />
+    <Folder Include="Resources\Apks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+  <ItemGroup>
+      <None Update="ClientApp\dist\assets\data\entidades.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Connected Services\ServiceReference1\ConnectedService.json" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties appsettings_1json__JsonSchema="" clientapp_4package_1json__JsonSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
