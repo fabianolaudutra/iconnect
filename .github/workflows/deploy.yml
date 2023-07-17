@@ -25,8 +25,8 @@ jobs:
             git pull --rebase &&
             docker stop $(docker ps -a -q) &&
             docker rm $(docker ps -a -q) &&
-            docker build --no-cache --build-arg NODE_ENV=develop -t iconnect:latest -f docker/nodejs/Dockerfile . &&
+            docker build --no-cache --build-arg NODE_ENV=homolog -t iconnect:latest -f docker/nodejs/Dockerfile . &&
             docker stop iconnect > /dev/null 2>&1 && echo 'container parado' || echo 'container n existe' &&
             docker system prune -f &&
-            docker run --restart on-failure --env-file appsettings.Development.json -p 3000:3000 -d --name=iconnect iconnect:latest
+            docker run --restart on-failure --env-file appsettings.Development.json -p 4200:4200 -d --name=iconnect iconnect:latest
           '
