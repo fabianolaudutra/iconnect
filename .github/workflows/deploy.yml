@@ -1,5 +1,4 @@
 name: Deploy new feature in master
-
 on:
   push:
     branches: [ "master" ]
