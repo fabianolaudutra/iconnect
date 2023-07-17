@@ -1,17 +1,57 @@
-.button-container {
+.cima-esquerda {
+  width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: end;
 }
 
-.horizontal-button {
-  padding: 10px 20px;
-  background-color: #f0f0f0;
-  border: none;
-  border-radius: 5px;
+.button-acesso {
+  width: 120px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, black, #3331c7);
+  margin-left: 5px;
+  padding: 17px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.horizontal-button:hover {
-  background-color: #d0d0d0;
+.button-alerta1 {
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, #ff3131, #ff904d);
+  margin-left: 5px;
+  padding: 17px;
+  font-size: 16px;
+  cursor: pointer;
 }
+
+.button-alerta2 {
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, #a7a7a7, #fefefe);
+  margin-left: 5px;
+  padding: 17px;
+  font-size: 16px;
+  cursor: pointer;
+}
+// .button-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .horizontal-button {
+//   padding: 10px 20px;
+//   background-color: #f0f0f0;
+//   border: none;
+//   border-radius: 5px;
+//   font-size: 16px;
+//   cursor: pointer;
+// }
+
+// .horizontal-button:hover {
+//   background-color: #d0d0d0;
+// }
+

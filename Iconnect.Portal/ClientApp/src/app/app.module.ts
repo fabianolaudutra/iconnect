@@ -10,6 +10,7 @@ import { MoradorComponent } from './morador/morador.component';
 import { FormsModule } from '@angular/forms';
 import { MoradorListComponent } from './morador-list/morador-list.component';
 import { HorizontalButtonsComponent } from './horizontal-buttons/horizontal-buttons.component';
+import { PesquisaPrincipalComponent } from './pesquisa-principal/pesquisa-principal.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HorizontalButtonsComponent } from './horizontal-buttons/horizontal-butt
     VideoMonitorsComponent,
     MoradorComponent,
     MoradorListComponent,
-    HorizontalButtonsComponent
+    HorizontalButtonsComponent,
+    PesquisaPrincipalComponent
   ],
   imports: [
     BrowserModule,

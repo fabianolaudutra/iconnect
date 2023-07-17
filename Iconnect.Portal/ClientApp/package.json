@@ -1,10 +1,10 @@
 {
-  "name": "PortalIconnect",
+  "name": "Portal.Iconnect",
   "version": "2.0",
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 44414",
     "build": "node --max-old-space-size=512 ./node_modules/@angular/cli/lib/ng build --configuration=electron --production",
     "build-electron": "node --max-old-space-size=512 ./node_modules/@angular/cli/lib/ng build --configuration production --aot ",
     "test": "ng test",
@@ -13,8 +13,8 @@
     "e2e": "ng e2e"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "15.2.8",
-    "@angular/cli": "15.2.8",
+    "@angular-devkit/build-angular": "^15.2.9",
+    "@angular/cli": "^15.2.9",
     "@angular/compiler-cli": "15.2.9",
     "@angular/language-service": "15.2.9",
     "ngx-cookie-service": "15.0.0",
@@ -55,7 +55,7 @@
     "date-fns": "^2.30.0",
     "enhanced-resolve": "^5.14.1",
     "file-saver": "^2.0.5",
-    "firebase": "^9.22.1",
+    "firebase": "^8.6.8",
     "flot": "^4.2.3",
     "fullcalendar": "^6.1.8",
     "intl": "^1.2.5",

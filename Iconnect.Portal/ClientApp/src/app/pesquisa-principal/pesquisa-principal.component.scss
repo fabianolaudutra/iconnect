@@ -1,0 +1,17 @@
+.cima-direita {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.input {
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #015884;
+  margin-right: 20px;
+  margin-top: 12px;
+  padding: 8px;
+  text-align: center;
+}
