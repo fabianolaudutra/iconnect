@@ -1,7 +1,9 @@
+using AutoMapper;
 using ElectronNET.API;
 using Iconnect.Dominio.Helpers;
 using Iconnect.Infraestrutura.Context;
 using Iconnect.Infraestrutura.Crosscutting;
+using Iconnect.Portal.Helpers;
 using Iconnect.Portal.Helpers.HubConfigs;
 using Iconnect.Portal.HubConfigs;
 using Iconnect.Portal.IdentityServer;
@@ -17,8 +19,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System.Threading.Tasks;
 
-namespace Iconnect.Portal
-{
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -35,6 +35,18 @@ namespace Iconnect.Portal
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
             var appSettings = appSettingsSection.Get<AppSettings>();
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+           // services.AddAutoMapper(typeof(Startup));
+
+            // Auto Mapper Configurations
+            // var mapperConfig = new MapperConfiguration(mc =>
+            // {
+            //     mc.AddProfile(new MappingProfiles());
+            // });
+
+            // IMapper mapper = mapperConfig.CreateMapper();
+            // services.AddSingleton(mapper);
 
             services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
             {
@@ -53,8 +65,12 @@ namespace Iconnect.Portal
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api - Iconnect", Version = "v1" });
             });
 
-            services.AddDbContext<IconnectCoreContext>(opt => opt.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
-
+            
+            services.AddDbContext<IconnectCoreContext>((options)=>
+            {
+                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
+            });
+            
             services.AddScoped<IResourceOwnerPasswordValidator, ResourceOwnerPAsswordValidator>();
             services.AddScoped<IProfileService, ProfileService>();
 
@@ -78,7 +94,8 @@ namespace Iconnect.Portal
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            RegisterServices(services, appSettings);
+            services.AddControllers();
+
         }
 
         private void RegisterServices(IServiceCollection services, AppSettings appSettings)
@@ -87,14 +104,14 @@ namespace Iconnect.Portal
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IconnectCoreContext iconnectCoreContext)
+        public void Configure(WebApplication app, IWebHostEnvironment env ,  IconnectCoreContext iconnectCoreContext )
         {
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
             }
-            else
+              else
             {
                 //Executa migrations e altera��es do banco ao executar o projeto
                 //iconnectCoreContext.Database.Migrate();
@@ -103,55 +120,28 @@ namespace Iconnect.Portal
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 //app.UseHsts();
             }
+          
 
-            //app.UseHttpsRedirection();
-
-            app.UseStaticFiles();
-            if (!env.IsDevelopment())
+            app.UseSwaggerUI(c =>
             {
-                app.UseSpaStaticFiles();
-            }
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Iconnect.Portal v1");
+            });
+
+            app.UseHttpsRedirection();
             app.UseIdentityServer();
 
             app.UseCors("CorsPolicy");
 
             app.UseRouting();
             app.UseIdentityServer();
+            app.UseStaticFiles();
             app.UseAuthorization();
-          
-            app.UseEndpoints(endpoints =>
-           {
-                endpoints.MapControllerRoute(name: "default", pattern: "{controller}/{action=Index}/{id?}");
-                // endpoints.MapHub<BiometriaHub>("/controleAcesso");
-                // endpoints.MapHub<ControleDeAcessoHub>("/monitoramentoControleAcesso");
-                // endpoints.MapHub<ConnectGuardHub>("/monitoramento");
-                // endpoints.MapHub<ControleOcorrenciaHub>("/solicitarZelador");
-                // endpoints.MapHub<LiberacaoAppHub>("/liberacaoApp");
-                // endpoints.MapHub<ComboClienteGuardHub>("/comboClienteGuard");
-           });
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller}/{action=Index}/{id?}");
+                
+            app.MapFallbackToFile("index.html"); 
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            });
 
-            app.UseSpa(spa =>
-            {
-                // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                // see https://go.microsoft.com/fwlink/?linkid=864501
-
-               // spa.Options.SourcePath = "ClientApp";
-                spa.Options.SourcePath = "ClientApp"; 
-
-                if (env.IsDevelopment())
-                {
-                     spa.UseProxyToSpaDevelopmentServer("http://localhost:3000");
-                   // spa.UseAngularCliServer(npmScript: "start");
-                }
-            });
-
-            Task.Run(async () => await Electron.WindowManager.CreateWindowAsync());
         }
     }
-}

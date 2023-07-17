@@ -56,11 +56,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
+      "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
       "projectName": "Iconnect.ViaCEP",
-      "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
+      "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
       "packagesPath": "/home/fabiano/.nuget/packages/",
-      "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/",
+      "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -107,7 +107,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
       }
     }
   }

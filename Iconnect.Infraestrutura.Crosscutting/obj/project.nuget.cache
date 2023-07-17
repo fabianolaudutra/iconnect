@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wWMi4rUclrqV1nB69h2eGq/HkFJ1HjhPjGRqJcRiNINMaVqtOoBZnxAhzr0uV1qIiMdysjfM04rk9/61uAWstw==",
+  "dgSpecHash": "gd1s5UKbnnOJEQlGMOqhcCU+R/oqlZ0CNoXlgZKSGXvqG/iF2LQJm/xyYdux23Hj/WZMLhkiR8ahJRFnZ0iVMA==",
   "success": true,
-  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj",
+  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj",
   "expectedPackageFiles": [
-    "/home/fabiano/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
+    "/home/fabiano/.nuget/packages/automapper/8.0.0/automapper.8.0.0.nupkg.sha512",
     "/home/fabiano/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/6.0.0/automapper.extensions.microsoft.dependencyinjection.6.0.0.nupkg.sha512",
     "/home/fabiano/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/home/fabiano/.nuget/packages/epplus/4.5.3.3/epplus.4.5.3.3.nupkg.sha512",

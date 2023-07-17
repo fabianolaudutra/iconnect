@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/Iconnect.Dominio.csproj",
+      "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/Iconnect.Dominio.csproj",
       "projectName": "Iconnect.Dominio",
-      "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/Iconnect.Dominio.csproj",
+      "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/Iconnect.Dominio.csproj",
       "packagesPath": "/home/fabiano/.nuget/packages/",
-      "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/obj/",
+      "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
       }
     }
   }

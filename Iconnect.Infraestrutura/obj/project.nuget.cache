@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TOhrzIcN0R7ZBIUs3guB7BGMzxYTVH7/tTvvlyYszyouO+iUw5NyxfYPkDFa25KFGM/81Xv4x76a1UMutdXx5A==",
+  "dgSpecHash": "QFJX0kbV2Ag3YhKrOJV797aWkww98KFWMCykz8GNi/s1TuioWCvUNZZJoiRTa8BCSoPlefGlqI9vy/UMzdnuFg==",
   "success": true,
-  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj",
+  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj",
   "expectedPackageFiles": [
     "/home/fabiano/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/fabiano/.nuget/packages/microsoft.aspnetcore.hosting.abstractions/2.2.0/microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",

@@ -9,8 +9,6 @@ using Iconnect.Aplicacao.ViewModels;
 using PagedList;
 using System;
 using OfficeOpenXml;
-using System.Globalization;
-using Iconnect.Portal.Helpers;
 using System.IO;
 using System.Text;
 
@@ -827,7 +825,7 @@ namespace Iconnect.Aplicacao.Services
             }
             catch (Exception ex)
             {
-                RegistraLog.Log(ex.ToString(), "ArquivoLog");
+                // RegistraLog.Log(ex.ToString(), "ArquivoLog");
             }
             return false;
         }

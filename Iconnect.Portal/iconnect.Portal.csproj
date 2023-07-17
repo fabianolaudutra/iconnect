@@ -6,8 +6,8 @@
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
     <IsPackable>false</IsPackable>
     <SpaRoot>ClientApp\</SpaRoot>
-    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
-    <!-- <SpaProxyServerUrl>https://localhost:44414</SpaProxyServerUrl> -->
+    <!-- <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes> -->
+    <SpaProxyServerUrl>https://localhost:44414</SpaProxyServerUrl>
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Set this to true if you enable server-side prerendering -->
@@ -16,7 +16,9 @@
     <UserSecretsId>df76158e-fabe-4cfa-92cb-f920b3c92b92</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <!-- <PackageReference Include="AutoMapper" Version="9.0.0" /> -->
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     
     <PackageReference Include="ElectronNET.API" Version="23.6.1" />
     <PackageReference Include="IdentityServer4" Version="3.1.0" />

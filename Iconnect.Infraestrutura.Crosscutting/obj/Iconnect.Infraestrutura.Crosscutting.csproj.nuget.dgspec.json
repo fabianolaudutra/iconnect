@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj": {}
+    "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj": {}
   },
   "projects": {
-    "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj": {
+    "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj",
+        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj",
         "projectName": "Iconnect.Aplicacao",
-        "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj",
+        "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj",
         "packagesPath": "/home/fabiano/.nuget/packages/",
-        "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Aplicacao/obj/",
+        "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Aplicacao/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -26,14 +26,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/Iconnect.Bucket.csproj": {
-                "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/Iconnect.Bucket.csproj"
+              "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/Iconnect.Bucket.csproj": {
+                "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/Iconnect.Bucket.csproj"
               },
-              "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj": {
-                "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj"
+              "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj": {
+                "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj"
               },
-              "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj": {
-                "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj"
+              "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj": {
+                "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj"
               }
             }
           }
@@ -48,10 +48,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -144,18 +140,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/Iconnect.Bucket.csproj": {
+    "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/Iconnect.Bucket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/Iconnect.Bucket.csproj",
+        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/Iconnect.Bucket.csproj",
         "projectName": "Iconnect.Bucket",
-        "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/Iconnect.Bucket.csproj",
+        "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/Iconnect.Bucket.csproj",
         "packagesPath": "/home/fabiano/.nuget/packages/",
-        "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/obj/",
+        "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -202,18 +198,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/Iconnect.Dominio.csproj": {
+    "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/Iconnect.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/Iconnect.Dominio.csproj",
+        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/Iconnect.Dominio.csproj",
         "projectName": "Iconnect.Dominio",
-        "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/Iconnect.Dominio.csproj",
+        "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/Iconnect.Dominio.csproj",
         "packagesPath": "/home/fabiano/.nuget/packages/",
-        "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/obj/",
+        "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -254,18 +250,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj": {
+    "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj",
+        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj",
         "projectName": "Iconnect.Infraestrutura.Crosscutting",
-        "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj",
+        "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura.Crosscutting/Iconnect.Infraestrutura.Crosscutting.csproj",
         "packagesPath": "/home/fabiano/.nuget/packages/",
-        "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura.Crosscutting/obj/",
+        "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura.Crosscutting/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -280,14 +276,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj": {
-                "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj"
+              "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj": {
+                "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Aplicacao/Iconnect.Aplicacao.csproj"
               },
-              "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/Iconnect.Dominio.csproj": {
-                "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Dominio/Iconnect.Dominio.csproj"
+              "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/Iconnect.Dominio.csproj": {
+                "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Dominio/Iconnect.Dominio.csproj"
               },
-              "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj": {
-                "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj"
+              "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj": {
+                "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj"
               }
             }
           }
@@ -330,18 +326,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj": {
+    "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj",
+        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj",
         "projectName": "Iconnect.Infraestrutura",
-        "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj",
+        "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/Iconnect.Infraestrutura.csproj",
         "packagesPath": "/home/fabiano/.nuget/packages/",
-        "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Infraestrutura/obj/",
+        "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Infraestrutura/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -418,18 +414,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj": {
+    "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
+        "projectUniqueName": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
         "projectName": "Iconnect.ViaCEP",
-        "projectPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
+        "projectPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
         "packagesPath": "/home/fabiano/.nuget/packages/",
-        "outputPath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/obj/",
+        "outputPath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fabiano/.nuget/NuGet/NuGet.Config"
@@ -476,7 +472,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.120/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using Iconnect.Aplicacao;
 using Iconnect.Aplicacao.Interfaces.Queries;
 using Iconnect.Aplicacao.Queries;
@@ -13,18 +14,18 @@ namespace Iconnect.Infraestrutura.Crosscutting
     {
         public static void RegisterServices(IServiceCollection services, AppSettings settings)
         {
+            // services.AddAutoMapper(System.AppDomain.CurrentDomain.GetAssemblies());
+            // services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();           
+            // services.AddScoped<IconnectCoreContext>();
+            // services.AddScoped<IServiceWrapper, ServiceWrapper>();
+            // services.AddScoped<IMonitoramentoControleAcessoQuerie, MonitoramentoControleAcessoQuerie>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            // services.AddAutoMapper();
-            // services.AddAutoMapper(typeof(Startup), cfg =>
-            // {
-            //     cfg.CreateMap<DateTimeOffset, DateTime>().ConvertUsing<DateTimeOffsetConverter>();
-            //     cfg.CreateMap<DateTime, DateTimeOffset>().ConvertUsing<DateTimeConverter>();
-            //     cfg.CreateMap<DateTimeOffset?, DateTime?>().ConvertUsing<NullableDateTimeOffsetConverter>();
-            //     cfg.CreateMap<DateTime?, DateTimeOffset?>().ConvertUsing<NullableDateTimeConverter>();
-            // });
+            //services.AddAutoMapper();
             services.AddScoped<IconnectCoreContext>();
             services.AddScoped<IServiceWrapper, ServiceWrapper>();
             services.AddScoped<IMonitoramentoControleAcessoQuerie, MonitoramentoControleAcessoQuerie>();
         }
+
+
     }
 }

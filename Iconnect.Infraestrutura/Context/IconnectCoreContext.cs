@@ -29,6 +29,10 @@ namespace Iconnect.Infraestrutura.Context
             Database.SetCommandTimeout(150000);
         }
 
+        public IconnectCoreContext()
+        {
+        }
+
         #region DbSet Tabelas
         public virtual DbSet<tb_aba_agendaBackupAutomatico> tb_aba_agendaBackupAutomatico { get; set; }
         public virtual DbSet<tb_ace_acesso> tb_ace_acesso { get; set; }

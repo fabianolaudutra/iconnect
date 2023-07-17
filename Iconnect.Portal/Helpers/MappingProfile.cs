@@ -10,16 +10,17 @@ namespace Iconnect.Portal.Helpers
     {
         public MappingProfiles()
         {
-            //CreateMap<ItemNotaFiscal, ItemNotaFiscalViewModel>().ReverseMap();
-            //CreateMap<LeadTimeEntrega, LeadTimeEntregaExportExcel>().ReverseMap();
-            //CreateMap<LeadTimeEntrega, LeadTimeEntregaViewModel>().ReverseMap();
-            //CreateMap<NotaFiscal, NotaFiscalViewModel>().ReverseMap();
-            //CreateMap<PostoAutorizado, PostoAutorizadoViewModel>().ReverseMap();
-            //CreateMap<Transportadora, TransportadoraViewModel>().ReverseMap();
-            //CreateMap<Inventario, InventarioViewModel>().ReverseMap();
-            //CreateMap<ItemInventario, ItemInventarioViewModel>().ReverseMap();
-            //CreateMap<Produto, ProdutoViewModel>().ReverseMap();
-            //CreateMap<Pedido, PedidoViewModel>().ReverseMap();
+            //CreateMap<Cliente, ClienteViewModel>().ReverseMap();
+            // CreateMap<ItemNotaFiscal, ItemNotaFiscalViewModel>().ReverseMap();
+            // CreateMap<LeadTimeEntrega, LeadTimeEntregaExportExcel>().ReverseMap();
+            // CreateMap<LeadTimeEntrega, LeadTimeEntregaViewModel>().ReverseMap();
+            // CreateMap<NotaFiscal, NotaFiscalViewModel>().ReverseMap();
+            // CreateMap<PostoAutorizado, PostoAutorizadoViewModel>().ReverseMap();
+            // CreateMap<Transportadora, TransportadoraViewModel>().ReverseMap();
+            // CreateMap<Inventario, InventarioViewModel>().ReverseMap();
+            // CreateMap<ItemInventario, ItemInventarioViewModel>().ReverseMap();
+            // CreateMap<Produto, ProdutoViewModel>().ReverseMap();
+            // CreateMap<Pedido, PedidoViewModel>().ReverseMap();
         }
     }
 }

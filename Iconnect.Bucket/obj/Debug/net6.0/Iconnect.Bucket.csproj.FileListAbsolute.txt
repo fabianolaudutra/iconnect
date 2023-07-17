@@ -11,3 +11,16 @@
 /home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.dll
 /home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/obj/Debug/net6.0/ref/Iconnect.Bucket.dll
 /home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.pdb
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/bin/Debug/net6.0/iconnect-cloud-198200-02c06ffb7d64.json
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/bin/Debug/net6.0/Iconnect.Bucket.deps.json
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/bin/Debug/net6.0/Iconnect.Bucket.dll
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/bin/Debug/net6.0/ref/Iconnect.Bucket.dll
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/bin/Debug/net6.0/Iconnect.Bucket.pdb
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.csproj.AssemblyReference.cache
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.AssemblyInfoInputs.cache
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.AssemblyInfo.cs
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.csproj.CoreCompileInputs.cache
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.dll
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/ref/Iconnect.Bucket.dll
+/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/obj/Debug/net6.0/Iconnect.Bucket.pdb

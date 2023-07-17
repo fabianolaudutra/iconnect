@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "al+X9pqyclP0p4Mjfa9ffDap/9ktTU3ggnHhfOrX/vcG6WndTWr+HZhEmAWRoB0wvFQJQ+p9sCqaPTNhgxh/+w==",
+  "dgSpecHash": "y8VDNJ0s3cauwFXFraM+ORciNkL6BwxAv4Q4PDOAuG/jvyLnqmgoR8xd0kKpUKaYbO8fy+ic1AaNa5NpVLwjpw==",
   "success": true,
-  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.Bucket/Iconnect.Bucket.csproj",
+  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.Bucket/Iconnect.Bucket.csproj",
   "expectedPackageFiles": [
     "/home/fabiano/.nuget/packages/google.api.gax/3.3.0/google.api.gax.3.3.0.nupkg.sha512",
     "/home/fabiano/.nuget/packages/google.api.gax.rest/3.3.0/google.api.gax.rest.3.3.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nFKhbVKPJO+Rl+CzH/KeWyEqdvEeHR4OPYo/2Rto2bJe10QqJAIOIMmgJ4fwaLS9xSBvsbsT+VaFoSyED5hHWA==",
+  "dgSpecHash": "Aiq0eeTdu5GhS9d4c0uzuWAWBCgQQ61/2NRmAGcqk1y/Q9+IZZcEMDDTrtfkNUO7jfoXiX5BZ1yc65k5eIjKGA==",
   "success": true,
-  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/portal-iconnect-v2/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
+  "projectFilePath": "/home/fabiano/Documents/iconnectSolutions/git-iconnect/Iconnect.ViaCEP/Iconnect.ViaCEP.csproj",
   "expectedPackageFiles": [
     "/home/fabiano/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],

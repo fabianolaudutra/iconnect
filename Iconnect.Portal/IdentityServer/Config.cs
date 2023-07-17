@@ -39,7 +39,7 @@ namespace Iconnect.Portal.IdentityServer
                 new Client
                 {
                     // O Nome ÚNICO da nossa aplicação autorizada no nosso servidor de autoridade
-                    ClientId = "Iconnect.Portal",
+                    ClientId = "iconnect-portal",
                     
                     // Nome de exibição da nossa aplicação
                     ClientName = "Iconnect Portal",
