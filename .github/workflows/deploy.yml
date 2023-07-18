@@ -16,17 +16,12 @@ jobs:
           USER_NAME : "ubuntu"
 
         run: |
-          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
-          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
-          
-            #Now we have got the access of EC2 and we will start the deploy.
-            pwd &&
-            cd /home/ubuntu/app/iconnect &&
-            git pull --rebase &&
-            docker stop $(docker ps -a -q) &&
-            docker rm $(docker ps -a -q) &&
-            docker build --no-cache --build-arg NODE_ENV=homolog -t iconnect:latest -f docker/nodejs/Dockerfile . &&
-            docker stop iconnect > /dev/null 2>&1 && echo 'container parado' || echo 'container n existe' &&
-            docker system prune -f &&
-            docker run --restart on-failure --env-file appsettings.Development.json -p 4200:4200 -d --name=iconnect iconnect:latest
+          sudo apt-get update
+          sudo apt-get install openssh-client -y
           '
+      - name: Copy SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan your.ec2.instance.ip >> ~/.ssh/known_hosts      
