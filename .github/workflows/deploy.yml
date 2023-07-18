@@ -7,35 +7,33 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:      
+      
       - uses: actions/checkout@v3
-      - name: Deploy in EC2 master
-        env:
-          PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          HOSTNAME : "ec2-54-197-67-58.compute-1.amazonaws.com"
-          USER_NAME : "ubuntu"
-          TARGET: "/var/www/html/iconnect/"
-          REMOTE_HOST: "ec2-54-197-67-58.compute-1.amazonaws.com"
-        run: |
-          sudo apt-get update
-          curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-          sudo apt-get install gcc g++ make
-          sudo apt-get update && sudo apt-get install yarn  
-          //install nodejs
-          sudo apt-get install -y nodejs
-          npm install -g @angular/cli > /dev/null 
-          //install git
-          sudo apt-get install git
-          //clone project
-          git clone https://github.com/fabianolaudutra/iconnect.git
-          //install dependencies
-          npm install
-          //run project
-          //install nginx
-          sudo apt-get install nginx
-          //copy nginx config
-          sudo cp /home/ubuntu/your-project/nginx.conf /etc/nginx/sites-available/default
-          //restart nginx
-          sudo systemctl restart nginx
-          '
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+      - uses: actions/cache@v3 # this allows for re-using node_modules caching, making builds a bit faster.
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: NPM Install
+        run: npm install
+      - name: NPM Install Angular
+        run: npm install -g @angular/cli > /dev/null
      
+     
+      - name: NPM build Angular Production
+        run: npm run build:prod
+     
+      
+      - name: Deploy to my EC2 instance
+        uses: easingthemes/ssh-deploy@v2.1.5
+        with:
+          PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY}}
+          SOURCE: "dist/iconnecto/"
+          REMOTE_HOST: "ec2-54-197-67-58.compute-1.amazonaws.com"
+          REMOTE_USER: "ubuntu"
+          TARGET: "/var/www/html/iconnect/"
