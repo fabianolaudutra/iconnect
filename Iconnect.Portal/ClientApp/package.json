@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 44414",
-    "build": "node --max-old-space-size=512 ./node_modules/@angular/cli/lib/ng build --configuration=electron --production",
+    "start": "ng serve",
+    "build": "node --max-old-space-size=512 ./node_modules/@angular/cli/lib/ng build  --production",
     "build-electron": "node --max-old-space-size=512 ./node_modules/@angular/cli/lib/ng build --configuration production --aot ",
     "test": "ng test",
     "lint": "ng lint",
