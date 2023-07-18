@@ -26,7 +26,7 @@ jobs:
      
      
       - name: NPM build Angular Production
-        run: npm run build
+        run: ng build
      
       
       - name: Deploy to my EC2 instance
