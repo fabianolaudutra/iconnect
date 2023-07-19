@@ -29,10 +29,12 @@ jobs:
      
       
       - name: Deploy to my EC2 instance
-        uses: easingthemes/ssh-deploy@v2.1.5
-        with:
+        uses: actions/checkout@v3
+        env:
           PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY}}
           SOURCE: "dist/iconnect/"
           REMOTE_HOST: "ec2-54-197-67-58.compute-1.amazonaws.com"
           REMOTE_USER: "ubuntu"
           TARGET: "/var/www/html/iconnect/"
+        
+        
