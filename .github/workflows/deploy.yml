@@ -35,6 +35,6 @@ jobs:
           SOURCE: "dist/iconnect/"
           REMOTE_HOST: "ec2-54-197-67-58.compute-1.amazonaws.com"
           REMOTE_USER: "ubuntu"
-          TARGET: "/var/www/html/iconnect/"
+          TARGET: "/home/ubuntu/app/iconnect/"
         
         
