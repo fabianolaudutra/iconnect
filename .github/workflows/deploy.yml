@@ -22,11 +22,10 @@ jobs:
       - name: NPM Install
         run: npm install
       - name: NPM Install Angular
-        run: npm install -g @angular/cli > /dev/null
-     
-     
-      - name: NPM build Angular Production
-        run: ng build
+        run: npm install -g @angular/cli > /dev/null              
+       
+      - name: NPM build Angular
+        run: npm run build --if-present
      
       
       - name: Deploy to my EC2 instance
